@@ -43,26 +43,28 @@ Layout Styles
 ****************************
 ***************************/
 .container{
-	padding:0 15px 0 15px;
-	margin-right:auto;
 	margin-left:auto;
+	margin-right:auto;
 	max-width:1170px;
+	padding-left:15px;
+	padding-right:15px;
 }
 
 .row{
-	margin-right:-15px;
 	margin-left:-15px;
+	margin-right:-15px;
 }
 
 .row:After{
+	clear:both;
 	content:"";
 	display:table;
-	clear:both;
 }
 
 [class*='col-']{
-	width:100%;
-	padding:0;	
+	width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;	
 }
 
 
@@ -88,6 +90,14 @@ Layout Styles
 @media (min-width: 48em){
 	.pull-right-sm{
 		float:right;
+	}
+}
+
+
+@media only screen and (max-width:47.9375em){
+	.remove-gutter-xs{
+		padding-left:0;
+		padding-right:0;
 	}
 }
 /***************************
